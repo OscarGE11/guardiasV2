@@ -3,6 +3,10 @@ package com.proyectoGuardiasOscar.guardias.repositorios;
 import com.proyectoGuardiasOscar.guardias.modelo.Usuarios;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface IUsuariosRepository extends JpaRepository<Usuarios,Integer> {
+import java.util.Optional;
+
+public interface IUsuariosRepository extends IGenericoRepositorio<Usuarios,Integer> {
+
+    Optional<Usuarios> findByEmail(String email);
 
 }

@@ -28,7 +28,7 @@ public class Guardias {
 
 
     @ManyToOne
-    @JoinColumn(name = "usuario_id", nullable = false)
+    @JoinColumn(name = "id_usuario", nullable = false)
     private Usuarios usuario;
 
 
